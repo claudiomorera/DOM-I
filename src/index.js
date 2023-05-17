@@ -40,3 +40,55 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+//Images
+const logoImg = document.querySelector('#logo-img');
+logoImg.src = siteContent.images['logo-img'];
+const ctaImg = document.querySelector("#cta-img");
+ctaImg.src = siteContent.images["cta-img"];
+const accentImg = document.querySelector("#middle-img");
+accentImg.src = siteContent.images["accent-img"];
+
+//Footer
+const footerLink = document.querySelector('footer a');
+footerLink.textContent = siteContent.footer.copyright;
+
+//Contact
+const contact = document.querySelector(".contact");
+contact.children[0].textContent = siteContent.contact["contact-h4"];
+contact.children[1].textContent = siteContent.contact.address;
+contact.children[2].textContent = siteContent.contact.phone;
+contact.children[3].textContent = siteContent.contact.email;
+
+//Main Content
+//TopContent
+const topContent = document.querySelector(".main-content .top-content");
+topContent.children[0].children[0].textContent = siteContent["main-content"]["features-h4"];
+topContent.children[0].children[1].textContent = siteContent["main-content"]["features-content"];
+
+topContent.children[1].children[0].textContent = siteContent["main-content"]["about-h4"];
+topContent.children[1].children[1].textContent = siteContent["main-content"]["about-content"]
+//BottomContent
+const bottomContent = document.querySelector(".main-content .bottom-content");
+bottomContent.children[0].children[0].textContent = siteContent["main-content"]["services-h4"];
+bottomContent.children[0].children[1].textContent = siteContent["main-content"]["services-content"];
+
+bottomContent.children[1].children[0].textContent = siteContent["main-content"]["product-h4"];
+bottomContent.children[1].children[1].textContent = siteContent["main-content"]["product-content"];
+
+bottomContent.children[2].children[0].textContent = siteContent["main-content"]["vision-h4"];
+bottomContent.children[2].children[1].textContent = siteContent["main-content"]["vision-content"];
+
+//cta
+const cta = document.querySelector(".cta .cta-text");
+cta.children[0].textContent = siteContent.cta.h1;
+cta.children[1].textContent = siteContent.cta.button;
+
+//Navagator
+const nav = document.querySelector("nav");
+nav.children[0].textContent = siteContent.nav["nav-item-1"];
+nav.children[1].textContent = siteContent.nav["nav-item-2"];
+nav.children[2].textContent = siteContent.nav["nav-item-3"];
+nav.children[3].textContent = siteContent.nav["nav-item-4"];
+nav.children[4].textContent = siteContent.nav["nav-item-5"];
+nav.children[5].textContent = siteContent.nav["nav-item-6"];
